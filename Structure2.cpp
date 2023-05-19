@@ -12,8 +12,8 @@
 
 struct students
 {
-	int stu_id,stu_age;
-	char stu_name[100],emp_role[100],stu_city[100],emp_experience[100],emp_company_name[100];
+	int stu_id,stu_age,emp_experience;
+	char stu_name[100],emp_role[100],stu_city[100],emp_company_name[100];
 	
 }s[100];
 
@@ -25,38 +25,38 @@ main()
 	
 	for(i=0;i<n;i++)
 	{
-		printf("Enter  ID:-");
+		printf(" Enter employee ID:-");
 		scanf("%d",&s[i].stu_id);
 		
-		printf("Enter students NAME:-");
+		printf(" Enter employee NAME:-");
 		scanf("%s",&s[i].stu_name);
 		
-		printf("Enter students AGE:-");
+		printf(" Enter employee AGE:-");
 		scanf("%d",&s[i].stu_age);
 		
-		printf("Enter students COURSE:-");
-		scanf("%s",&s[i].stu_course);
+		printf(" Enter employee ROLE:-");
+		scanf("%s",&s[i].emp_role);
 		
-		printf("Enter students CITY:-");
+		printf(" Enter employee CITY:-");
 		scanf("%s",&s[i].stu_city);
 		
-		printf("Enter students STD:-");
-		scanf("%d",&s[i].stu_std);
+		printf(" Enter employee EXPERIENCE:-");
+		scanf("%d",&s[i].emp_experience);
 		
-		printf("Enter students SCHOOL:-");
-		scanf("%s",&s[i].stu_school);
+		printf(" Enter employee COMPANY_NAME:-");
+		scanf("%s",&s[i].emp_company_name);
 		
 	}
 	printf("\n-----------------------------------------------------------------\n");
 	
 	for(i=0;i<n;i++)
 	{
-		printf("students ID:-%d\n",    s[i].stu_id);
-		printf("students NAME:-%s\n",  s[i].stu_name);
-		printf("students AGE:-%d\n",   s[i].stu_age);
-		printf("students COURSE:-%s\n",s[i].stu_course);
-		printf("students CITY:-%s\n",  s[i].stu_city);
-		printf("students STD:-%d\n",   s[i].stu_std);
-		printf("students SCHOOL:-%s\n",s[i].stu_school);
+		printf(" employee ID:-%d\n",          s[i].stu_id);
+		printf(" employee NAME:-%s\n",        s[i].stu_name);
+		printf(" employee AGE:-%d\n",         s[i].stu_age);
+		printf(" employee ROLE:-%s\n",        s[i].emp_role);
+		printf(" employee CITY:-%s\n",        s[i].stu_city);
+		printf(" employee EXPERIENCE:-%d\n",  s[i].emp_experience);
+		printf(" employee COMPANY_NAME:-%s\n",s[i].emp_company_name);
 	}
 }
