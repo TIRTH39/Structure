@@ -45,8 +45,8 @@ main()
 		
 		printf("Enter students SCHOOL:-");
 		scanf("%s",&s[i].stu_school);
-		
 	}
+	
 	printf("\n-----------------------------------------------------------------\n");
 	
 	for(i=0;i<n;i++)
